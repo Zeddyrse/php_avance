@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <form action="/menu.php" method="post" class="container bg-light border rounded p-5">
+    <form action="thanks.php" method="post" class="container bg-light border rounded p-5">
         <h1 class="text-center">Récapitulatif</h1>
 
         <p class="row">
@@ -31,16 +31,12 @@
             <input type="text" name="telephone" id="telephone" class="form-control">
         </p>
 
-        <div class="sujet row mb-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Sujet
-            </button>
-            <ul class="dropdown-menu">
-                <li><button class="dropdown-item" name="reclamation" type="button">Réclamation</button></li>
-                <li><button class="dropdown-item" name="vendeur" type="button">Contacter Vendeur</button></li>
-                <li><button class="dropdown-item" name="assistance" type="button">Assistance Technique</button></li>
-            </ul>
-        </div>
+        <select name='sujet' class="row form-select mb-4" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="reclamation">Réclamation</option>
+            <option value="vendeur">Contact Vendeur</option>
+            <option value="assistance">Assistance Technique</option>
+        </select>
 
         <div class="row form-floating">
             <textarea class="form-control mb-3" name="message" placeholder="Leave a comment here" id="message" style="height: 100px " ></textarea>
