@@ -21,25 +21,25 @@
 
         <p class="row">
             <label for="lastname" class="form-label">Nom : </label>
-            <input type="text" name="lastname" id="name" class="form-control" >
+            <input type="text" name="lastname" id="name" class="form-control" required>
         </p>
 
         <p class="row">
             <label for="firstname" class="form-label">Prénom : </label>
-            <input type="text" name="firstname" id="firstname" class="form-control" >
+            <input type="text" name="firstname" id="firstname" class="form-control" required>
         </p>
 
         <p class="row">
             <label for="mail" class="form-label">Mail : </label>
-            <input type="email" name="mail" id="mail" class="form-control" >
+            <input type="email" name="mail" id="mail" class="form-control" required>
         </p>
 
         <p class="row">
             <label for="telephone" class="form-label">Téléphone : </label>
-            <input type="number" name="telephone" id="telephone" class="form-control" >
+            <input type="number" name="telephone" id="telephone" class="form-control" required>
         </p>
 
-        <select name='sujet' class="row form-select mb-4" aria-label="Default select example">
+        <select required name='sujet' class="row form-select mb-4" aria-label="Default select example">
             <option selected>Open this select menu</option>
             <option value="reclamation">Réclamation</option>
             <option value="vendeur">Contact Vendeur</option>
@@ -47,7 +47,7 @@
         </select>
 
         <div class="row form-floating">
-            <textarea class="form-control mb-3" name="message" placeholder="Leave a comment here" id="message" style="height: 100px " ></textarea>
+            <textarea class="form-control mb-3" name="message" placeholder="Leave a comment here" id="message" style="height: 100px " required></textarea>
             <label for="message"> Message</label>
         </div>
 
