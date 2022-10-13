@@ -1,3 +1,9 @@
+ <?php header("Location : form.php"); 
+ ?> 
+
+<!-- -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,28 +13,30 @@
     <title>Commande</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
+
 <body>
-    <form action="thanks.php" method="post" class="container bg-light border rounded p-5">
+
+    <form action="form.php" method="POST" class="container bg-light border rounded p-5">
         <h1 class="text-center">Récapitulatif</h1>
 
         <p class="row">
-            <label for="name" class="form-label">Nom : </label>
-            <input type="text" name="name" id="name" class="form-control">
+            <label for="lastname" class="form-label">Nom : </label>
+            <input type="text" name="lastname" id="name" class="form-control" >
         </p>
 
         <p class="row">
-            <label for="firstName" class="form-label">Prénom : </label>
-            <input type="text" name="firstName" id="firstName" class="form-control">
+            <label for="firstname" class="form-label">Prénom : </label>
+            <input type="text" name="firstname" id="firstname" class="form-control" >
         </p>
 
         <p class="row">
             <label for="mail" class="form-label">Mail : </label>
-            <input type="text" name="mail" id="mail" class="form-control">
+            <input type="email" name="mail" id="mail" class="form-control" >
         </p>
 
         <p class="row">
             <label for="telephone" class="form-label">Téléphone : </label>
-            <input type="text" name="telephone" id="telephone" class="form-control">
+            <input type="number" name="telephone" id="telephone" class="form-control" >
         </p>
 
         <select name='sujet' class="row form-select mb-4" aria-label="Default select example">
@@ -48,7 +56,9 @@
         </p>
 
     </form>
+        
 
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
